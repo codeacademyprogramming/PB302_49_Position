@@ -1,0 +1,32 @@
+.box{
+    background-color: #f5f5f5;
+}
+ul{
+    padding:8px 16px
+}
+
+ul li{
+    display: inline-block;
+    margin-left: 14px;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    width: 1px;
+    height: 13px;
+    background-color: black;
+    position: absolute;
+    top: 3px;
+    left: -10px;
+}
+ul li:first-child::before{
+    /* width: 0px; */
+    display: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+
